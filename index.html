@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTrade | Direct from Farm to Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1600'); background-size: cover; background-position: center; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="sprout" class="text-green-600 w-8 h-8"></i>
+                    <span class="text-2xl font-bold text-green-800 tracking-tight">AgriTrade</span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#" class="hover:text-green-600">Marketplace</a>
+                    <a href="#" class="hover:text-green-600">Equipment</a>
+                    <a href="#" class="hover:text-green-600">Logistics</a>
+                    <a href="#" class="hover:text-green-600">Advisory</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="p-2 hover:bg-gray-100 rounded-full"><i data-lucide="search"></i></button>
+                    <button class="p-2 hover:bg-gray-100 rounded-full relative">
+                        <i data-lucide="shopping-cart"></i>
+                        <span class="absolute top-0 right-0 bg-green-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                    </button>
+                    <button class="bg-green-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-green-700 transition">Sell Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient h-[500px] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Empowering Modern Agriculture</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Connect directly with farmers, source premium produce, and access world-class farming machinery in one click.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-full font-bold text-lg">Browse Produce</button>
+                <button class="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-full font-bold text-lg">Lease Machinery</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories -->
+    <section class="max-w-7xl mx-auto py-12 px-4">
+        <h2 class="text-2xl font-bold mb-8">Browse by Category</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition cursor-pointer group">
+                <div class="bg-green-50 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-green-600 transition">
+                    <i data-lucide="leaf" class="text-green-600 group-hover:text-white"></i>
+                </div>
+                <p class="font-semibold">Organic</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition cursor-pointer group">
+                <div class="bg-green-50 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-green-600 transition">
+                    <i data-lucide="wheat" class="text-green-600 group-hover:text-white"></i>
+                </div>
+                <p class="font-semibold">Grains</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition cursor-pointer group">
+                <div class="bg-green-50 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-green-600 transition">
+                    <i data-lucide="tractor" class="text-green-600 group-hover:text-white"></i>
+                </div>
+                <p class="font-semibold">Machinery</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition cursor-pointer group">
+                <div class="bg-green-50 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-green-600 transition">
+                    <i data-lucide="droplets" class="text-green-600 group-hover:text-white"></i>
+                </div>
+                <p class="font-semibold">Irrigation</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition cursor-pointer group">
+                <div class="bg-green-50 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-green-600 transition">
+                    <i data-lucide="flask-conical" class="text-green-600 group-hover:text-white"></i>
+                </div>
+                <p class="font-semibold">Fertilizers</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center hover:shadow-md transition cursor-pointer group">
+                <div class="bg-green-50 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-green-600 transition">
+                    <i data-lucide="truck" class="text-green-600 group-hover:text-white"></i>
+                </div>
+                <p class="font-semibold">Logistics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <main class="max-w-7xl mx-auto px-4 pb-20">
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <h2 class="text-3xl font-bold">Featured Products</h2>
+                <p class="text-gray-600">Freshly harvested and ready for dispatch</p>
+            </div>
+            <button class="text-green-600 font-semibold flex items-center gap-1 hover:underline">
+                View All Market <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Product Card -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&q=80&w=600" alt="Avocados" class="h-48 w-full object-cover">
+                <div class="p-4">
+                    <span class="text-xs font-bold text-green-600 uppercase tracking-widest">Organic</span>
+                    <h3 class="font-bold text-lg mt-1">Hass Avocados (Bulk)</h3>
+                    <div class="flex items-center gap-1 text-yellow-500 my-2">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <span class="text-gray-600 text-sm">4.9 (120 reviews)</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-4">Origin: Central Highlands</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-gray-900">$12.00<span class="text-sm text-gray-500">/kg</span></span>
+                        <button onclick="addToCart('Hass Avocados')" class="bg-gray-900 text-white p-2 rounded-lg hover:bg-green-600 transition">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1518977676601-b53f02ac6d5d?auto=format&fit=crop&q=80&w=600" alt="Potatoes" class="h-48 w-full object-cover">
+                <div class="p-4">
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Bulk Supply</span>
+                    <h3 class="font-bold text-lg mt-1">Irish Potatoes</h3>
+                    <div class="flex items-center gap-1 text-yellow-500 my-2">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <span class="text-gray-600 text-sm">4.7 (85 reviews)</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-4">Origin: Kinangop Plateau</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-gray-900">$45.00<span class="text-sm text-gray-500">/50kg Bag</span></span>
+                        <button onclick="addToCart('Irish Potatoes')" class="bg-gray-900 text-white p-2 rounded-lg hover:bg-green-600 transition">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 (Equipment) -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&q=80&w=600" alt="Tractor" class="h-48 w-full object-cover">
+                <div class="p-4">
+                    <span class="text-xs font-bold text-orange-600 uppercase tracking-widest">Lease</span>
+                    <h3 class="font-bold text-lg mt-1">Compact Utility Tractor</h3>
+                    <div class="flex items-center gap-1 text-yellow-500 my-2">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <span class="text-gray-600 text-sm">5.0 (12 reviews)</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-4">Availability: Immediate Hire</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-gray-900">$80.00<span class="text-sm text-gray-500">/day</span></span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition font-medium">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=600" alt="Honey" class="h-48 w-full object-cover">
+                <div class="p-4">
+                    <span class="text-xs font-bold text-green-600 uppercase tracking-widest">Natural</span>
+                    <h3 class="font-bold text-lg mt-1">Pure Blossom Honey</h3>
+                    <div class="flex items-center gap-1 text-yellow-500 my-2">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <span class="text-gray-600 text-sm">4.8 (210 reviews)</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-4">Type: Unprocessed / Wild</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-gray-900">$15.00<span class="text-sm text-gray-500">/500ml</span></span>
+                        <button onclick="addToCart('Blossom Honey')" class="bg-gray-900 text-white p-2 rounded-lg hover:bg-green-600 transition">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <i data-lucide="sprout" class="text-green-500 w-6 h-6"></i>
+                    <span class="text-xl font-bold text-white">AgriTrade</span>
+                </div>
+                <p class="text-sm leading-relaxed">The leading B2B and B2C agricultural marketplace helping farmers scale their businesses through technology and global reach.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Marketplace</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-white">Fresh Produce</a></li>
+                    <li><a href="#" class="hover:text-white">Livestock</a></li>
+                    <li><a href="#" class="hover:text-white">Seeds & Fertilizers</a></li>
+                    <li><a href="#" class="hover:text-white">Farming Tools</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Resources</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-white">Market Pricing</a></li>
+                    <li><a href="#" class="hover:text-white">Weather Updates</a></li>
+                    <li><a href="#" class="hover:text-white">Farming Tips</a></li>
+                    <li><a href="#" class="hover:text-white">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Stay Updated</h4>
+                <div class="flex">
+                    <input type="email" placeholder="Email address" class="bg-gray-800 border-none rounded-l-lg px-4 py-2 w-full focus:ring-2 focus:ring-green-500 outline-none">
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-r-lg hover:bg-green-700 transition">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-xs uppercase tracking-widest">
+            © 2026 AgriTrade Global. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Simple Cart Logic
+        let cartCount = 0;
+        function addToCart(itemName) {
+            cartCount++;
+            document.querySelector('.relative span').textContent = cartCount;
+            alert(`${itemName} added to cart!`);
+        }
+    </script>
+</body>
+</html>
